@@ -14,7 +14,6 @@ function NavPage() {
     <NavLink to='/' style={activeLink}>Home</NavLink>
     <NavLink to='/create' style={activeLink}>Create New Blog</NavLink>
     <NavLink to='/list' style={activeLink}>Posted Blogs</NavLink>
-    <NavLink to='/show' style={activeLink}>Blog</NavLink>
     </nav>
   )
 }

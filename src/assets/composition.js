@@ -11,7 +11,15 @@ export const myContext = createContext()
 
 function Composition() {
 
-  const [ blogs , setBlogs ] = useState([])
+  const [ blogs , setBlogs ] = useState([{
+    id:1 ,
+    bloghead:'Brain of Brian',
+    blogdata:'The Brain of Brian is a digital comic book that has been turned into a serialized blog. Each post contains a new edition of the custom-illustrated and entertaining story. This graphics-driven website and blog is so enjoyable to peruse. From the storytelling snippets above the fold to the individual comic book posts down below, the content is uniquely colorful and hilarious. You can tell that the artist put a lot of time into designing this website.'
+  },{
+    id:2 ,
+    bloghead:'Brit-Dot-Design',
+    blogdata:'Brit Arnesen created britdotdesign to share her DIY home decor and renovation projects. Its classy design and beautifully shot imagery entice homeowners seeking tips. The conversational-style writing keeps them engaged, leaving them eager to find the subscriber form. The footer of this site is worth checking out. It features a full-width Instagram feed, which is the perfect addition to any design blog. Below that is a subscriber form that invites readers to stay connected. Last but not least, it includes a link to book a consultation with Brit. '
+  }])
 
   return (
     <>
