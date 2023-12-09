@@ -22,7 +22,7 @@ function CreateBlog() {
 
   return (
     <>
-    <h1 style={{fontSize:'40px',color:'rgba(255,255,255,0.5)'}}>Start Creating Your Blog</h1>
+    <h1 style={{fontSize:'40px',color:'rgba(255,255,255,0.5)'}}>Start Creating Your Own Blog</h1>
     <div style={{textAlign:'left' ,padding:'10px' , margin:'20px'}}>
         <label style={{marginBottom:'10px' ,color:'white'}}><b>Name Your Blog:</b></label><br />
         <input type="text" style={{width:'100%' , height:'4vh' ,marginTop:'10px' ,border:'2px solid white', backgroundColor:'rgb(40 ,40 ,40)',color:'white',fontSize:'20px'}} ref={BlogHeading}/><br/><br/>
