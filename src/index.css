@@ -14,10 +14,24 @@ code {
 nav {
   background-color: rgb(74, 79, 83);
   padding: 10px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 nav a{
-  padding:40px;
   font-size: 22px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
+}
+.showStyle{
+  padding:50px 100px;
+}
+@media only screen and (max-width:500px){
+  .showStyle{
+    padding: 30px;
+  }
+  
 }

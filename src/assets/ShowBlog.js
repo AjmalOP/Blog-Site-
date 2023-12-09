@@ -9,7 +9,7 @@ function ShowBlog() {
   
   const [ blogs , ] = useContext(myContext)
   return (
-    <div style={{padding:'50px 100px'}}>
+    <div className="showStyle">
         <h1 style={{color:'rgba(255,255,255,.8)'}}>{blogs[blogid-1].bloghead}</h1>
         <div style={{textAlign:'left',fontSize:'18px',color:'rgba(255,255,255,.7)'}}>
           {blogs[blogid-1].blogdata}
