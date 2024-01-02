@@ -4,15 +4,15 @@ import { useContext } from 'react'
 import { myContext } from './composition'
 
 function ShowBlog() {
-  const params = useParams()
-  const blogid = params.id
+  const {id} = useParams()
+  
   
   const [ blogs , ] = useContext(myContext)
   return (
     <div className="showStyle">
-        <h1 style={{color:'rgba(255,255,255,.8)'}}>{blogs[blogid-1].bloghead}</h1>
+        <h1 style={{color:'rgba(255,255,255,.8)'}}>{blogs[id-1].bloghead}</h1>
         <div style={{textAlign:'left',fontSize:'18px',color:'rgba(255,255,255,.7)'}}>
-          {blogs[blogid-1].blogdata}
+          {blogs[id-1].blogdata}
         </div>
     </div>
   )

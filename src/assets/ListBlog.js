@@ -10,7 +10,7 @@ function ListBlog() {
     <div>
       <ul style={{ listStyleType: 'none' }}>
                 {blogs.map(blog => (
-                    <li>
+                    <li key={blog.id}>
                       <button onClick={()=> navigate(`/show/${blog.id}`)} style={{border:'0' , backgroundColor:'rgba(0,0,0,0)',color:'white'}}><h1>➡️ {blog.bloghead}</h1></button>
                     </li>
                 ))}
